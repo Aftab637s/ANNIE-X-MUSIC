@@ -5,7 +5,7 @@ from pyrogram.types import Message
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMediaPhoto
 from config import *
 from ANNIEMUSIC import app
-from ANNIEMUSIC.core.call import JARVIS
+from ANNIEMUSIC.core.call import ᴀꜰᴛᴀʙ
 from ANNIEMUSIC.utils import bot_sys_stats
 from ANNIEMUSIC.utils.decorators.language import language
 from ANNIEMUSIC.utils.inline import supp_markup
@@ -17,10 +17,10 @@ from config import BANNED_USERS
 async def ping_com(client, message: Message, _):
     start = datetime.now()
     response = await message.reply_video(
-        video="https://telegra.ph/file/634addcd0a2828f4e8913.mp4",
+        video="https://telegra.ph/file/c7e7ad67174180ba87fa4.jpg",
         caption=_["ping_1"].format(app.mention),
     )
-    pytgping = await JARVIS.ping()
+    pytgping = await ᴀꜰᴛᴀʙ.ping()
     UP, CPU, RAM, DISK = await bot_sys_stats()
     resp = (datetime.now() - start).microseconds / 1000
     await response.edit_text(
