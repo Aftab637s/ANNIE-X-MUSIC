@@ -20,14 +20,14 @@ MESSAGE = f"""**๏ ᴛʜɪs ɪs ᴛʜᴇ ᴀᴅᴠᴀɴᴄᴇ ᴍᴜsɪᴄ ᴘ�
 BUTTON = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("๏ ᴋɪᴅɴᴀᴘ ᴍᴇ ๏", url=f"https://t.me/{app.username}?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users")
+            InlineKeyboardButton("๏ ʙᴀʙᴜ 😘😘 ๏", url=f"https://t.me/{app.username}?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users")
         ]
     ]
 )
 
-CELEBRATION_VID_URL = "https://github.com/doraemon890/ANNIE-X-MUSIC/assets/155803358/dcbec346-bb98-4818-9a1c-683e9c3107b0"
+CELEBRATION_VID_URL = "https://github.com/Aftab637s/ANNIE-X-MUSIC/tree/Master/ANNIEMUSIC"
 
-BD_VID = "https://telegra.ph/file/943bb99829ec526c3f99a.mp4"
+BD_VID = "https://graph.org/file/5e169fb61b9a212344531.jpg"
 
 async def send_message_to_chats():
     try:
