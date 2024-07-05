@@ -62,8 +62,8 @@ def welcomepic(pic, user, chatname, id, uname):
     pfp = circle(pfp)
     pfp = pfp.resize((835, 839))
     draw = ImageDraw.Draw(background)
-    font_large = ImageFont.truetype('ANNIEMUSIC/assets/annie/ArialReg.ttf', size=65)
-    font_small = ImageFont.truetype('ANNIEMUSIC/assets/annie/ArialReg.ttf', size=60)
+    font_large = ImageFont.truetype('ANNIEMUSIC/assets/annie/ArialReg.ttf', size=80)
+    font_small = ImageFont.truetype('ANNIEMUSIC/assets/annie/ArialReg.ttf', size=80)
     draw.text((421, 715), f'{user}', fill=(242, 242, 242), font=font_large)
     draw.text((270, 1005), f'{id}', fill=(242, 242, 242), font=font_large)
     draw.text((570, 1308), f"{uname}", fill=(242, 242, 242), font=font_large)
@@ -74,7 +74,7 @@ def welcomepic(pic, user, chatname, id, uname):
 
 @app.on_message(filters.command("wel") & ~filters.private)
 async def auto_state(_, message):
-    usage = "**Usage:**\n⦿/wel [on|off]\n➤ANNIE SPECIAL WELCOME.........."
+    usage = "**Usage:**\n⦿/wel [on|off]\n➤ᴀꜰᴛᴀʙ SPECIAL WELCOME.........."
     if len(message.command) == 1:
         return await message.reply_text(usage)
     chat_id = message.chat.id
@@ -139,6 +139,8 @@ async def greet_new_member(_, member: ChatMemberUpdated):
                 photo=welcomeimg,
                 caption=f"""
 **❅────✦ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ✦────❅
+ᴄʜᴀᴛ-ꜰʀɪᴇɴᴅꜱ-ꜰᴏʀᴇᴠᴇʀ ᴍʀ 🙏🏻
+
 {member.chat.title}
 ▰▰▰▰▰▰▰▰▰▰▰▰▰
 ➻ Nᴀᴍᴇ ✧ {user.mention}
