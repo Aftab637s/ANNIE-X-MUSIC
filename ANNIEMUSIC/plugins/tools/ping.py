@@ -17,7 +17,7 @@ from config import BANNED_USERS
 async def ping_com(client, message: Message, _):
     start = datetime.now()
     response = await message.reply_video(
-        video="https://telegra.ph/file/c7e7ad67174180ba87fa4.jpg",
+        video="https://graph.org/file/5e169fb61b9a212344531.jpg",
         caption=_["ping_1"].format(app.mention),
     )
     pytgping = await ᴀꜰᴛᴀʙ.ping()
