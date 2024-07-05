@@ -66,9 +66,9 @@ APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
 # List of random photo links
 random_photo_links = [
-    "https://telegra.ph/file/2e7b72279b28105607667.jpg",
-    "https://telegra.ph/file/b21cb521c304e52a32187.jpg",
-    "https://telegra.ph/file/87bae0c629ae73032ae77.jpg",
+    "https://graph.org/file/5e169fb61b9a212344531.jpg",
+    "https://graph.org/file/5e169fb61b9a212344531.jpg",
+    "https://graph.org/file/5e169fb61b9a212344531.jpg",
     # Add more links as needed
 ]
 
@@ -91,7 +91,7 @@ async def autoapprove(client: app, message: ChatJoinRequest):
         profile_path=photo,
     )
 
-    print(f"{user.first_name} Joined 🤝")  # Logs
+    print(f"{user.first_name} Joined 🙏🏻")  # Logs
 
     await client.approve_chat_join_request(chat_id=chat.id, user_id=user.id)
 
