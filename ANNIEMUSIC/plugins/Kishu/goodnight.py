@@ -34,9 +34,9 @@ def get_random_sticker():
 # Function to get a random emoji
 def get_random_emoji():
     emojis = [
-        "😴",
-        "😪", 
-        "💤",
+        "ʜᴀ ʜᴀ ᴊᴀᴏ ᴊᴀᴏ ",
+        "🙄", 
+        "ɢᴏᴏᴅ ɴɪɢʜᴛ 😘",
         
     ]
     return random.choice(emojis)
